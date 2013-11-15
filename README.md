@@ -126,6 +126,14 @@ Karma version: 0.10.4
 sudo apt-get install ruby1.9.1 ruby1.9.1-dev make
 sudo gem install jekyll
 ruby --version; gem --version;
+
+# running Jekyll locally
+
+# few more npm installs to be done
+npm install grunt
+npm install regexp-quote
+npm install btoa
+  
 ```
 
 ## Copyright and license
