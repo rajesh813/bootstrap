@@ -40,15 +40,6 @@ bootstrap/
 We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). Fonts from Glyphicons are included, as is the optional Bootstrap theme.
 
 
-
-## Bugs and feature requests
-
-Have a bug or a feature request? [Please open a new issue](https://github.com/twbs/bootstrap/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
-
-You may use [this JS Bin](http://jsbin.com/aKiCIDO/1/edit) as a template for your bug reports.
-
-
-
 ## Documentation
 
 Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://getbootstrap.com>. The docs may also be run locally.
@@ -105,60 +96,37 @@ Should you encounter problems with installing dependencies or running Grunt comm
 
 
 
-## Contributing
-
-Please read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the [Code Guide](http://github.com/mdo/code-guide), maintained by [Mark Otto](http://github.com/mdo).
-
-Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
-
-With v3.1, we're moving from the Apache 2 to the MIT license for the Bootstrap code (not the docs). Please see the [contributing guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md) for more information.
-
-
-## Community
-
-Keep track of development and community news.
-
-* Follow [@twbootstrap on Twitter](http://twitter.com/twbootstrap).
-* Read and subscribe to [The Official Bootstrap Blog](http://blog.getbootstrap.com).
-* Have a question that's not a feature request or bug report? [Ask on the mailing list.](http://groups.google.com/group/twitter-bootstrap)
-* Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, in the `##twitter-bootstrap` channel.
-
-
-
-
-## Versioning
-
-For transparency and insight into our release cycle, and for striving to maintain backward compatibility, Bootstrap will be maintained under the Semantic Versioning guidelines as much as possible.
-
-Releases will be numbered with the following format:
-
-`<major>.<minor>.<patch>`
-
-And constructed with the following guidelines:
-
-* Breaking backward compatibility bumps the major (and resets the minor and patch)
-* New additions without breaking backward compatibility bumps the minor (and resets the patch)
-* Bug fixes and misc changes bumps the patch
-
-For more information on SemVer, please visit <http://semver.org/>.
-
-
-
-## Authors
-
-**Mark Otto**
-
-+ <http://twitter.com/mdo>
-+ <http://github.com/mdo>
-
-**Jacob Thornton**
-
-+ <http://twitter.com/fat>
-+ <http://github.com/fat>
-
-
+```bash
+download and unzip nodejs runtime from http://nodejs.org/download/
+mkdir -p ~/programs/node && cd $_
+wget http://nodejs.org/dist/v0.10.21/node-v0.10.21-linux-x64.tar.gz
+tar xfz node-v0.10.21-linux-x64.tar.gz
+sudo vi /etc/bash.bashrc
+>>put and append bin to path
+export NODE_HOME=~/programs/node/node-v0.10.21-linux-x64
+>>save file and open new terminal and test
+node --version
+>>v0.10.21
+npm is part of nodejs runtime, test 
+npm --version
+>> 1.3.11
+ 
+installing GLOBAL packages, it saves global libraries in install dir of node, we use flag "-g" for that
+ 
+npm install -g bower
+npm install -g grunt-cli
+npm install -g karma
+# you  can do all 3 on same line as npm install -g bower grunt-cli karma
+bower --version; grunt --version; karma --version;
+1.2.7
+grunt-cli v0.1.10
+Karma version: 0.10.4
+ 
+#install ruby and rubygems to install jekyll
+sudo apt-get install ruby1.9.1 ruby1.9.1-dev make
+sudo gem install jekyll
+ruby --version; gem --version;
+```
 
 ## Copyright and license
 
